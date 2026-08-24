@@ -56,6 +56,10 @@ int main() {
     // COMPLETAR: Escriban el condicional 'if' para restarle 1 a la edad si la persona 
     // todavía no cumplió años en el mes o día actual.
 
+    if ((mesN > mesA) || (mesN == mesA && diaN > diaA)) {
+        edad--;
+    }
+
     cout << "\n[SISTEMA] Fecha de hoy: " << diaA << "/" << mesA << "/" << anioA << endl;
     cout << "[SISTEMA] Edad calculada: " << edad << " anos." << endl;
     cout << "=====================================================" << endl;

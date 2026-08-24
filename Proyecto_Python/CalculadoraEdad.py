@@ -35,6 +35,9 @@ try:
         edad = anioA - anioN
         
         # COMPLETAR: Escriban el condicional para ajustar la edad si aún no cumplió años:
+        
+        if (mesN > mesA) or (mesN == mesA and diaN > diaA):
+            edad -= 1
 
         print(f"\n[SISTEMA] Fecha de hoy: {diaA}/{mesA}/{anioA}")
         print(f"[SISTEMA] Edad calculada: {edad} anos.")
